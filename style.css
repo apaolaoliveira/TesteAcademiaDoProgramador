@@ -1,0 +1,91 @@
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color:#514869;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; /*x, y, blur, cor*/
+}
+
+.card > h1 {
+    color: #00FF88;
+    margin-bottom: 10px;
+}
+
+.card > h2 {
+    color: #f0ffffde;
+    text-align: center;
+}
+
+.form {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px; /*y, x*/
+
+}
+
+.form > input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    font-size: 12pt; 
+    text-align: center;
+    width: 100px;
+    box-shadow: 0px 10px 20px #00000056;
+    color: #f0ffffde;
+    outline: none;
+    box-sizing: border-box; /* cria uma relação onde a div filho não poderá ultrapassar a div pai*/
+}
+
+.form > label {
+    margin-right: 10px;
+    color: #f0ffffde;
+    text-align: center; 
+}
+
+.form > input::placeholder {
+    color: #f0ffff94;
+    text-align: center;
+}
+
+.lado2, .lado3{
+    margin-left: 40px;
+}
+
+.btn-submit{
+    width: 50%;
+    padding: 13px 0px; /*y, x*/
+    border: none;
+    border-radius: 0.6em;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    cursor: pointer;
+    border-color:#1dcd7b;
+    box-shadow: 0 0 40px 40px #07cb6f inset, 0 0 0 0 #00ff8052;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 10px 0 #00ff8052 inset, 0 0 10px 4px #00ff8052;
+}
